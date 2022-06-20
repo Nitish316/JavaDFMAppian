@@ -1,13 +1,13 @@
 package models;
 
-import java.time.ZonedDateTime;
+import java.time.LocalDateTime;
 
 public class Event {
   String traceId;
   String activity;
-  ZonedDateTime start;
+  LocalDateTime start;
 
-  public Event(String traceId, String activity, ZonedDateTime start) {
+  public Event(String traceId, String activity, LocalDateTime start) {
     this.traceId = traceId;
     this.activity = activity;
     this.start = start;
@@ -21,7 +21,7 @@ public class Event {
     return activity;
   }
 
-  public ZonedDateTime getStart() {
+  public LocalDateTime getStart() {
     return start;
   }
 }
